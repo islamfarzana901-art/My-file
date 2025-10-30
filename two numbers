@@ -1,0 +1,23 @@
+#include <iostream>
+#include <cmath>  // For floor, ceil, round
+
+using namespace std;
+
+int main() {
+    int A, B;
+    cin >> A >> B;
+
+    double result = static_cast<double>(A) / B;
+
+    // Calculate floor, ceil, and round
+    int floor_result = floor(result);
+    int ceil_result = ceil(result);
+    int round_result = round(result);
+
+    // Print results
+    cout << "floor " << A << " / " << B << " = " << floor_result << endl;
+    cout << "ceil " << A << " / " << B << " = " << ceil_result << endl;
+    cout << "round " << A << " / " << B << " = " << round_result << endl;
+
+    return 0;
+}
