@@ -1,0 +1,18 @@
+#include <iostream>
+#include <algorithm>  // For min and max
+
+using namespace std;
+
+int main() {
+    int A, B, C;
+    cin >> A >> B >> C;
+
+    // Find minimum and maximum
+    int minimum = min({A, B, C});
+    int maximum = max({A, B, C});
+
+    // Print result
+    cout << minimum << " " << maximum << endl;
+
+    return 0;
+}
