@@ -1,0 +1,29 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int A, B;
+    char op;
+
+    // Read input in the form: A op B (e.g., 7+54)
+    cin >> A >> op >> B;
+
+    int result;
+
+    // Evaluate based on operator
+    if (op == '+') {
+        result = A + B;
+    } else if (op == '-') {
+        result = A - B;
+    } else if (op == '*') {
+        result = A * B;
+    } else if (op == '/') {
+        result = A / B; // Integer division
+    }
+
+    // Print the result
+    cout << result << endl;
+
+    return 0;
+}
